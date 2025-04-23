@@ -61,8 +61,8 @@ return {
       -- Tambahkan timer untuk auto-save setiap 1 detik tanpa notifikasi
       local timer = vim.loop.new_timer()
       timer:start(
-        1000,
-        1000,
+        3000,
+        3000,
         vim.schedule_wrap(function()
           if vim.bo.modified then
             vim.cmd("silent! write") -- Menyimpan buffer yang dimodifikasi tanpa notifikasi
