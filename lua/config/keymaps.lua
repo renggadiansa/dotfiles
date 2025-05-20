@@ -49,7 +49,7 @@ vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]], { desc = "Exit terminal mode to nor
 vim.keymap.set("n", "<Tab>", "<cmd>Neotree toggle<CR>", { desc = "Toggle NeoTree file explorer with Tab" })
 
 -- Keymap untuk meng-cut teks yang diseleksi di mode visual dengan Ctrl+X
-vim.keymap.set("v", "<C-x>", '"*d', { desc = "Cut selected text with Ctrl+X" })
+vim.keymap.set("v", "<C-x>", '"+d', { desc = "Cut selected text with Ctrl+X" })
 
 -- Keymap untuk mengaktifkan/menonaktifkan word wrap dengan Ctrl+W
 vim.keymap.set("n", "<C-w>", "<cmd>setlocal wrap!<CR>", { desc = "Toggle word wrap" })
